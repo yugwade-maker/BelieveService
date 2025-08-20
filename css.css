@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+body{
+    scroll-behavior: smooth;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background: url(bg.jpg);
+    background-size: cover;
+}
+.nav{
+ width: 100%;
+ height: 80px;
+ background-color: rgb(8, 8, 43);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ color: white;
+ cursor: pointer;
+}
+.nav h1{
+    margin-left: 30px;
+}
+.nav ul{
+    list-style: none;
+    font-weight: bold;
+    display: flex;
+    gap: 50px;
+    font-size: 18px;
+}
+.nav ul a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    
+}
+.nav h3{
+    margin-right: 50px;
+    font-size: 30px;
+}
+
+.nav a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.3s;
+
+}
+.nav ul li a:hover::after{
+    width: 100%;
+}
+.nav ul li .d-recharge{
+    display: flex;
+    flex-direction: column;
+    color: red;
+    position: absolute;
+    top:70px;
+    margin-left: -30px;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(170, 168, 168, 0.385);
+    backdrop-filter: blur(3px);
+    display: none;    
+}
+.nav ul li .d-recharge li{
+    padding: 10px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.nav ul li:hover .d-recharge{
+    display: block;
+}
+.content{
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content h1{
+    color: white;
+    font-size: 80px;
+    
+}
+.content button{
+    padding: 15px 100px;
+    border-radius: 150px;
+    margin-top: 10px;
+    border:none;
+    background: rgb(255, 81, 0);
+    backdrop-filter: blur(15px);
+    cursor: pointer;
+    transition:all 0.2s;
+    
+}
+.content button a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    
+}
+.whatsapp{
+    width: 320px;
+    height: 500px;
+    background: url(bs\ whatsapp.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 30px;
+    position: absolute;
+    display: none;
+}
+.whatsapp .cut{
+    float: right;
+    cursor: pointer;
+}
+.content button:hover{
+   box-shadow: 2px 2px 20px rgba(128, 128, 128, 0.66);
+   background-color: rgb(227, 26, 19);
+}
+.content p{
+    color:white;
+    font-size: 25px;
+    padding-bottom: 10px;
+    
+}
+.service{
+    width: 100%;
+    height: 100vh;
+    background: rgb(1, 1, 39);
+    
+    
+}
+.service .container{
+ 
+  
+}
+.service  .heading{
+    width: 100%;
+    height: 100px;
+    color:#fff;
+    font-size: 30px;
+    display: flex;
+    align-items: end;
+    position: relative;}
+    
+.heading h1{
+    position: absolute;
+    left: 50px;
+}
+.service .service-content{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 180px 180px;
+    gap: 10px; 
+    row-gap: 5px;
+}
+
+
+.service-card {
+  width: 400px;
+  height: 100px;
+  background: #c7c3c36a;
+  margin-left: 30px;
+  margin-top: 50px;
+  padding: 20px;
+  border: 1px solid #cecbcb3e;
+  border-radius: 10px;
+  transition: 0.3s;
+  color: white;
+}
+.service-card h3{
+    padding-bottom: 10px;
+    color: greenyellow;
+    font-size: 20px;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 25px rgba(131, 126, 126, 0.929);
+}
+
+.recharge{
+    width: 100%;
+    height: 100vh;
+    background: rgb(1, 1, 39);
+}
+.r-heading{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding-top: 50px;
+    
+}
+.r-heading h2{
+    color: white;
+    margin-right: 50px;
+    font-size: 30px;
+    border: 3px solid ;
+    padding: 10px;
+    border-radius: 50%;
+}
+.r-heading h1{
+    color: white;
+    margin-left: 50px;
+    font-size: 50px;
+    position: relative;
+    
+}
+.r-heading i{
+    border: 3px solid;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 15px;
+    position: absolute;
+    top:7px
+    
+}
+
+.r-container{
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+
+
+
+.contact{
+    width: 100%;
+    height: 70vh;
+    background: rgb(1, 1, 39);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-recharge{
+    
+      margin: 0 auto;
+      color: white;
+      padding: 40px;
+    }
+
+    .container-recharge h1 {
+        font-size: 45px;
+      text-align: center;
+      color: greenyellow;
+      margin-bottom: 10px;
+      
+    }
+    .container-recharge p{
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 22px;
+
+    }
+
+    select {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto 60px;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .plans-grid {
+       
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+
+    .plan-card {
+        width: 300px;
+        height: 120px;
+      background: #ffffff;
+      padding: 30px;
+      padding-left: 30PX;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .plan-card h3 {
+      margin: 0;
+      color: black;
+      font-size: 22px;
+    }
+
+    .plan-details {
+      margin: 10px 0;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .whatsapp-btn {
+      align-self: end;
+      background: #07cb3e;
+      border: none;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      transition: background 0.3s;
+    }
+
+    .whatsapp-btn:hover {
+      background: #1ebe57;
+    }
+
+    .whatsapp-btn i {
+      margin-right: 6px;
+    }
+
+
+
+.last-page{
+    width: 96%;
+    height: 60vh;
+    background: rgba(251, 251, 251, 0.179);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.lp-box{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 30px;
+   
+    
+    
+}
+.lp-box .lp-name{
+    font-weight: bold;
+    font-size: 23px;
+}
+.lp-dis{
+    font-weight: 500;
+    font-size: 17px;
+}
+.lp-dis a{
+     text-decoration: none;
+     color: blue;
+}
+.lp-dis:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.lp-dis input{
+    padding: 7px 15px;
+    border-radius: 3px;
+    border: 1px solid;
+}
+.lp-dis button{
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 3px;
+    border: none;
+    background-color: orangered;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.lp-dis input::placeholder{
+   text-align: center;
+}
+.lp-icon {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+}
+.lp-dis button:hover{
+    transform: scale(1.02);
+    background-color: rgb(42, 11, 125);
+}
+.last-page .subscribe-sec{
+    width: 100px;
+    height: 200px;
+    background: red;
+    border: 1px solid;
+    border-radius: 10px;
+    z-index: 999;
+    position: absolute;
+}
+footer {
+  background: #12024b99;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  
+}
+
+
+@media only screen and (max-width: 600px){
+
+    body{
+        background: rgb(1, 1, 39);
+        
+    }
+.nav{
+     
+    position: relative; 
+}
+.nav ul{
+    display: none;
+}
+.nav h3{
+  position: absolute;
+  left:85%;
+}
+.content h1{
+    font-size: 50px;
+}
+.content p{
+    font-size: 23px;
+    margin-top: 10px;
+}
+.content button{
+    padding: 10px 60px;
+}
+.whatsapp{
+    width: 240px;
+    height: 400px;
+}
+.service{
+    
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.service .service-content{  
+    height: 165vh;
+    display: grid;   
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(9,120px);
+    overflow: hidden;
+    position: relative;
+}
+
+
+.service-card {
+      width: 380px;
+      height: 70px;
+      z-index: 99;
+    }
+
+
+.plan-card {
+        width: 350px;
+        height: 50px;
+        position: relative;
+    }
+.whatsapp-btn{
+    position: absolute;
+    top:20px;
+    right: 15px;
+}
+
+.r-heading h2{
+    display: none;
+}
+.recharge{
+   
+    height: auto;
+   
+    display: flex;
+    flex-direction: column;
+}
+.r-heading{
+    padding: 0;
+}
+.r-heading h1{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.r-container{
+    width: 480px;
+    height: auto;
+   
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+.plans-grid {      
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+.container-recharge h1{
+    font-size: 30px;
+   padding-top: 10px;
+   
+   
+}
+.container-recharge p{
+    font-size: 16px;
+   
+}
+.last-page{
+    height: 96vh;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 300px;
+}
+footer{
+    display: none;
+}
+}

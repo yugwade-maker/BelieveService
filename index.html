@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BelieveServices</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+      <div class="nav">
+        <h1 onclick="document.getElementById('whatsapp').style.display='block'">BS</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#recharge">Recharge</a>
+            <ul class="d-recharge">
+                <li><a href="">SmartPhone</a></li>
+                <li><a href="">JioPhone</a></li>
+                <li><a href="">Data TopUp</a></li>
+            </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="">Other</a></li>
+        </ul>
+        <h3><i class="fa-brands fa-whatsapp" onclick="document.getElementById('whatsapp').style.display='block'"></i></h3>
+      </div>
+      <div class="content">
+        <h1>BelieveServices</h1>
+        <p>Believe in Service. Trust in Us.</p>
+        <button><a href="#service">Explore More</a></button>
+         
+        <div class="whatsapp" id="whatsapp">
+          <div class="cut"><i class="fa-solid fa-xmark" onclick="document.getElementById('whatsapp').style.display='none'"></i></div>
+        </div>
+
+        </div>
+    </div>
+    <section class="service" id="service">
+      <div class="heading">
+       <h1>Our Services</h1>
+       </div>
+      <div class="container">
+
+      
+
+      <div class="service-content">
+         
+        <div class="service-card">
+          <h3>Aadhar Services</h3>
+          <p>Update and download Aadhar card services.</p>
+        </div>
+        <div class="service-card">
+          <h3>Bill Payments</h3>
+          <p>Electricity, water and gas</p>
+        </div>
+        <div class="service-card">
+          <h3>Pan Card</h3>
+          <p>Apply for new PAN or corrections.</p>
+        </div>
+        <div class="service-card">
+          <h3>Mobile Recharge</h3>
+          <p>All Company Recharge Available</p>
+        </div>
+        <div class="service-card">
+          <h3>Online Transaction</h3>
+          <p>We Transfer Your Money with Very Small Charges (10rs on 1000rs Transaction)</p>
+        </div>
+        <div class="service-card">
+          <h3>Government Forms</h3>
+          <p>Assistance with various online forms.</p>
+        </div>
+        <div class="service-card">
+          <h3>Cash Withdrawal</h3>
+          <p>Withdrawal Your Money Safely from any Banks</p>
+        </div>
+        <div class="service-card">
+          <h3>Top Up</h3>
+          <p>Data TopUp, FreeFire Reedem Code and other </p>
+        </div>
+        <div class="service-card">
+          <h3>Paperwork</h3>
+          <p>Paperwork to Progress - Believe in Us.</p>
+        </div>
+
+      
+     </div>
+    </div>
+    </section>
+
+
+
+
+    <section class="recharge" id="recharge">
+
+      <div class="r-heading">
+        <h1>Recharges<i class="fa-solid fa-phone"></i></h1>
+        <h2>BS</h2>
+        
+      </div
+      >
+      <div class="r-container">
+      
+    
+
+      <div class="container-recharge">
+    <h1>Recharge Plans – Believe Service</h1>
+    <p>Recharge with Confidence. Believe Services Delivers.</p>
+
+    <select id="companySelect">
+      <option value="">Select SIM Company</option>
+      <option value="Jio">Jio</option>
+      <option value="Airtel">Airtel</option>
+      <option value="VI">VI</option>
+      <option value="BSNL">BSNL</option>
+    </select>
+
+    <div class="plans-grid" id="plansGrid">
+      <!-- Plans will go here -->
+    </div>
+  </div>
+
+
+
+    </div>
+
+    </section>
+
+
+
+
+
+    <section class="contact" id="contact">
+     <div class="last-page" id="last-page">
+    <div class="lp-box">
+        <div class="lp-name">BelieveServices</div>
+        <div class="lp-dis">Believe Services – Empowering Communities with Trust, Technology, and Timely Solutions for Every Citizen's Need.
+       </div>
+    <div class="lp-icon">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+       </div>
+    </div>
+
+    
+
+    <div class="lp-box">
+        <div class="lp-name">Contact Us</div>
+        <div class="lp-dis"> 
+            <div class="add"><a href="#">+91 7875797585</a></div>
+            <div class="add">Believeservice18.Sb@gmail.com</div>
+            <div class="add">BelieveServices,Nababpur, Ner,Yavatmal, Maharastra. 
+             <br> Pin Code: 445 102.
+            </div>
+        </div>
+    </div>
+
+    <div class="lp-box">
+        <div class="lp-name">Subscribe</div>
+        <div class="lp-dis"> 
+            <input type="text" id="email" placeholder="Enter Your Email" required/>
+            <button onclick="alert('Contact On Whatsapp')">Subscribe</button>
+        </div>
+    </div>
+    
+</div>
+
+
+    </section>
+    <footer>
+    <div class="container">
+      <p>&copy; 2025 Believe Service. All rights reserved.</p>
+    </div>
+  </footer>
+    <script>
+    
+   const plans = [
+      { company: 'Jio', amount: 249, validity: '28 days', benefit: '1.0 GB/day + Unlimited calls' },
+      { company: 'Jio', amount: 299, validity: '28 days', benefit: '1.5 GB/day + 100 SMS/day' },
+      { company: 'Jio', amount: 349, validity: '28 days', benefit: '2.0 GB/day + 100 SMS/day' },
+      { company: 'Airtel', amount: 249, validity: '28 days', benefit: '1.0 GB/day + Wynk + Calls' },
+      { company: 'Airtel', amount: 299, validity: '28 days', benefit: '1.5 GB/day + Amazon Prime' },
+      { company: 'Airtel', amount: 349, validity: '28 days', benefit: '2 GB/day + Amazon Prime' },
+      { company: 'VI', amount: 299, validity: '28 days', benefit: '1.5 GB/day + Weekend Rollover' },
+      { company: 'VI', amount: 699, validity: '56 days', benefit: '2 GB/day + Binge All Night' },
+      { company: 'VI', amount: 799, validity: '84 days', benefit: '2 GB/day + Binge All Night' },
+      { company: 'BSNL', amount: 107, validity: '30 days', benefit: 'Unlimited Calls + 3GB Data' },
+      { company: 'BSNL', amount: 197, validity: '70 days', benefit: '2GB/day + Calls' },
+    ];
+
+    const retailerWhatsApp = '917875797585'; // ✅ Retailer’s WhatsApp number with country code
+    const companySelect = document.getElementById('companySelect');
+    const plansGrid = document.getElementById('plansGrid');
+
+    // ✅ Renders plans based on selected company
+    function renderPlans(company) {
+      plansGrid.innerHTML = '';
+
+      const filteredPlans = company
+        ? plans.filter(p => p.company === company)
+        : [];
+
+      if (filteredPlans.length === 0 && company) {
+        plansGrid.innerHTML = `<p style="text-align:center;width:100%;">No plans available for ${company}</p>`;
+        return;
+      }
+
+      filteredPlans.forEach(plan => {
+        const card = document.createElement('div');
+        card.className = 'plan-card';
+        card.innerHTML = `
+          <h3>₹${plan.amount} – ${plan.company}</h3>
+          <div class="plan-details">
+            <strong>Validity:</strong> ${plan.validity}<br>
+            <strong>Benefit:</strong> ${plan.benefit}
+          </div>
+          <button class="whatsapp-btn">
+            <i class="fa-brands fa-whatsapp"></i> Send Direct to Retailer
+          </button>
+        `;
+
+        // ✅ Attach click event to button
+        const btn = card.querySelector('.whatsapp-btn');
+        btn.addEventListener('click', () => sendDirectMessageToRetailer(plan));
+
+        plansGrid.appendChild(card);
+      });
+    }
+
+    // ✅ Handle company dropdown change
+    companySelect.addEventListener('change', () => {
+      renderPlans(companySelect.value);
+    });
+
+    // ✅ Function: open WhatsApp with message and number
+    function sendDirectMessageToRetailer(plan) {
+      const message = `Hello Retailer,I'm interested in the following recharge plan from Believe Service:• Amount: ₹${plan.amount}• Validity: ${plan.validity}• Benefit: ${plan.benefit}Please assist.`;
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappURL = `https://wa.me/${retailerWhatsApp}?text=${encodedMessage}`;
+      window.open(whatsappURL, '_blank');
+    }
+
+    </script>
+</body>
+</html>  
