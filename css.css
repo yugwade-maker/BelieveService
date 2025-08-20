@@ -480,9 +480,11 @@ footer {
       z-index: 99;
     }
 
-
+select{
+    max-width: 250px;
+}
 .plan-card {
-        width: 350px;
+        width: 270px;
         height: 50px;
         position: relative;
     }
@@ -544,6 +546,7 @@ footer{
 }
 
 }
+
 
 
 
