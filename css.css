@@ -511,6 +511,7 @@ footer {
 }
 .r-container{
     width: 440px;
+    background:red;
     height: auto;
    
     display: flex;
@@ -543,4 +544,5 @@ footer{
 }
 
 }
+
 
